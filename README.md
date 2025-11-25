@@ -1,4 +1,4 @@
-# Telegam Rcon LOGGER 
+# Telegram Rcon LOGGER 
 - Установка зависимости: 
 ```bash
    py -m pip install -r requirements.txt
