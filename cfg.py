@@ -1,11 +1,21 @@
 # TG настройки
-TOKEN = "токин"
+TOKEN = "enter_token"
 CHAT_ID = "чатик" # ID чата куда будет всё логгироваться (нужно добавить бота в чат)
+
+# Распределие по темам. Если None, то отправляет логи в General. Id топика выглядит: "1234567"
+tg_log_thread_id_map = {
+    "Generic": None,
+    "Log": None,
+    "Chat": None,
+    "Error": None,
+    "Warning": None
+}
+
 
 # RCON НАСТРОЙКИ
 RCON_IP = "127.0.0.1"
 RCON_PORT = 28016
-RCON_PASSWORD = "паролик"
+RCON_PASSWORD = "enter_rcon_password"
 
 # емодзи перед сообщением по типам
 emoji_map = {
@@ -15,5 +25,5 @@ emoji_map = {
     "Warning": "⚠️",
 }
 
-MAX_LEN = 3900 # максимальная длинна символов в одном сообщении
-RECONNECT_TIME_SLEEP = 1 # время в секундах через сколько будет происходить реконект по rcon
+MAX_LEN = 4000 # максимальная длинна символов в одном сообщении
+RECONNECT_TIME_SLEEP = 0.1 # время в секундах через сколько будет происходить реконект по rcon
