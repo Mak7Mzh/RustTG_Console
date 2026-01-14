@@ -8,4 +8,5 @@
 2. `main.py` - запуск тг бота вместе с логгером.
 Получить chat_id и thread_id (id топика) - `/start`
 
-![описание](https://i.ibb.co/209s2X8w/image.png)
+![logg_example](https://i.ibb.co/209s2X8w/image.png)
+![topic_example](https://i.ibb.co/5XKRHPX3/image.png)
