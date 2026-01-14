@@ -1,5 +1,6 @@
 import websockets, json, asyncio, aiohttp
 from collections import defaultdict
+from html import escape
 
 from cfg import RECONNECT_TIME_SLEEP, MAX_LEN, TOKEN, emoji_map, tg_log_thread_id_map, RCON_IP, RCON_PORT, RCON_PASSWORD, CHAT_ID
 
@@ -84,6 +85,7 @@ async def send_telegram_message(text: str, thread_id: str):
 
         if not part:
             continue
+        part = escape(part)
 
         params = {
             "chat_id": tg_log_chanel_id,

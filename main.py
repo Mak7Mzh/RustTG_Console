@@ -10,9 +10,9 @@ dp = Dispatcher()
 async def get_group_id(message: types.Message):
     chat_title = message.chat.title or "ЛС"
     await message.answer(
-        f"Topic: {chat_title}\n"
-        f"chat_id: `{message.chat.id}`\n"
-        f"thread_id: `{message.message_thread_id}`\n"
+        f"{chat_title}\n"
+        f"chat_id: {message.chat.id}\n"
+        f"thread_id: {message.message_thread_id}\n"
     )
 
 async def full_main():
